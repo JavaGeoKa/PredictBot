@@ -115,7 +115,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
 				// return predicts
 				System.out.println("logging..");
-				log(user_first_name, user_last_name, user_username, user_id, text, chat_id, stringLink, predicts);
+//				log(user_first_name, user_last_name, user_username, user_id, text, chat_id, stringLink, predicts);
 				say(chatId, stringLink, predicts);
 
 			} catch (IOException e) {
