@@ -1,0 +1,14 @@
+imagga/TagDto.class
+repoimgur/UploaderImgurController.class
+model/ImgurResponseDto.class
+model/JsonParser.class
+bots/TelegramBot.class
+imagga/ImaggaController.class
+model/ParserController.class
+imagga/ImgPredictor.class
+repoimgur/ImgurID.class
+imagga/ObjectDataImaggaDto.class
+imagga/ResultDto.class
+repoimgur/ImgurUploader.class
+model/ObjectDataDto.class
+controller/Controller.class

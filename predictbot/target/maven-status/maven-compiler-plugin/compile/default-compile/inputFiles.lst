@@ -1,0 +1,13 @@
+/home/g/git/predictbot/predictbot/src/main/java/model/ObjectDataDto.java
+/home/g/git/predictbot/predictbot/src/main/java/model/ImgurResponseDto.java
+/home/g/git/predictbot/predictbot/src/main/java/repoimgur/ImgurUploader.java
+/home/g/git/predictbot/predictbot/src/main/java/controller/Controller.java
+/home/g/git/predictbot/predictbot/src/main/java/repoimgur/ImgurID.java
+/home/g/git/predictbot/predictbot/src/main/java/imagga/ImaggaController.java
+/home/g/git/predictbot/predictbot/src/main/java/imagga/TagDto.java
+/home/g/git/predictbot/predictbot/src/main/java/bots/TelegramBot.java
+/home/g/git/predictbot/predictbot/src/main/java/model/JsonParser.java
+/home/g/git/predictbot/predictbot/src/main/java/imagga/ObjectDataImaggaDto.java
+/home/g/git/predictbot/predictbot/src/main/java/repoimgur/UploaderImgurController.java
+/home/g/git/predictbot/predictbot/src/main/java/model/ParserController.java
+/home/g/git/predictbot/predictbot/src/main/java/imagga/ImgPredictor.java

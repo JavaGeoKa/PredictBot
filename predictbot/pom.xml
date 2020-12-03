@@ -8,6 +8,13 @@
   <name>PredictBot</name>
   <description>Image predict bot</description>
   
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  
+  
   <dependencies>
   
     <dependency>
@@ -61,6 +68,8 @@
  		   <version>1.18.12</version>
   		  <scope>provided</scope>
 	</dependency>
+	
+	
   
   
   </dependencies>
@@ -75,21 +84,43 @@
     <sourceDirectory>src</sourceDirectory>
     <plugins>
         <plugin>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.6.1</version>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-dependency-plugin</artifactId>
+    <executions>
+        <execution>
+            <id>copy-dependencies</id>
+            <phase>prepare-package</phase>
+            <goals>
+                <goal>copy-dependencies</goal>
+            </goals>
             <configuration>
-                <source>1.8</source>
+				<source>1.8</source>
                 <target>1.8</target>
+                <outputDirectory>
+                    ${project.build.directory}/libs
+                </outputDirectory>
             </configuration>
-        </plugin>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>1.5.0</version>
-            <configuration>
-                <mainClass>org.baeldung.java.App</mainClass>
-            </configuration>
-        </plugin>
+        </execution>
+    </executions>
+</plugin>
+        
+ <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+    <configuration>
+        <archive>
+            <manifest>
+                <addClasspath>true</addClasspath>
+                <classpathPrefix>libs/</classpathPrefix>
+                <mainClass>
+                    controller.Controller
+                </mainClass>
+            </manifest>
+        </archive>
+    </configuration>
+</plugin>
+        
+        
     </plugins>
     
     
